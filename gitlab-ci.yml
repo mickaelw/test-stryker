@@ -1,0 +1,36 @@
+variables:
+  NODE_VERSION: "10.9.0"
+  YARN_VERSION: "1.9.4"
+
+image: node:${NODE_VERSION}
+
+before_script:
+  ## chmod is unfortunately currently mandatory : https://github.com/nodejs/docker-node/issues/661
+  - npm install -g yarn@${YARN_VERSION} && chmod +x /usr/local/lib/node_modules/yarn/bin/yarn.js
+
+stages:
+  - "Install"
+  - "Test"
+
+install:
+  stage: "Install"
+  script:
+    - yarn
+  cache:
+    key: ${CI_BUILD_REF_NAME}
+    paths:
+      - node_modules/
+  artifacts:
+    expire_in: "10 days"
+    paths:
+      - node_modules/
+
+lint:
+  stage: "Test"
+  script:
+    - yarn lint
+
+test:
+  stage: "Test"
+  script:
+    - yarn test

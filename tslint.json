@@ -1,0 +1,138 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint-eslint-rules",
+    "tslint:recommended",
+    "tslint-react",
+    "tslint-immutable",
+    "tslint-clean-code"
+  ],
+  "rulesDirectory": [
+    "node_modules/rxjs-tslint"
+  ],
+  "jsRules": {},
+  "rules": {
+    "arrow-parens": [
+      true,
+      "ban-single-arg-parens"
+    ],
+    "curly": [
+      true,
+      "as-needed"
+    ],
+    "comment-format": [
+      false
+    ],
+    "eofline": true,
+    "indent": [
+      true,
+      "spaces",
+      4
+    ],
+    "interface-name": [
+      true,
+      "never-prefix"
+    ],
+    "max-line-length": [
+      true,
+      {
+        "limit": 150,
+        "ignore-pattern": "d=\"[a-zA-Z0-9_]*"
+      }
+    ],
+    "member-access": [
+      true,
+      "no-public"
+    ],
+    "member-ordering": [
+      true,
+      {
+        "order": "fields-first"
+      }
+    ],
+    "no-console": [
+      true
+    ],
+    "no-default-export": true,
+    "no-string-literal": false,
+    "no-var-requires": false,
+    "one-line": [
+      false,
+      "check-else"
+    ],
+    "no-unused-variable": true,
+    "object-curly-spacing": [
+      true,
+      "always"
+    ],
+    "object-literal-sort-keys": false,
+    "ter-padded-blocks": [
+      true,
+      {
+        "class": "always",
+        "blocks": "never",
+        "switches": "never"
+      }
+    ],
+    "quotemark": [
+      true,
+      "single",
+      "jsx-double"
+    ],
+    "rxjs-collapse-imports": true,
+    "rxjs-pipeable-operators-only": true,
+    "rxjs-no-static-observable-methods": true,
+    "rxjs-proper-imports": true,
+    "semicolon": [
+      false,
+      "always"
+    ],
+    "trailing-comma": [
+      true,
+      {
+        "multiline": {
+          "objects": "never",
+          "arrays": "never",
+          "functions": "never",
+          "typeLiterals": "ignore"
+        }
+      }
+    ],
+    "typedef-whitespace": [
+      true,
+      {
+        "call-signature": "nospace",
+        "index-signature": "nospace",
+        "parameter": "nospace",
+        "property-declaration": "nospace",
+        "variable-declaration": "nospace"
+      },
+      {
+        "call-signature": "onespace",
+        "index-signature": "onespace",
+        "parameter": "onespace",
+        "property-declaration": "onespace",
+        "variable-declaration": "onespace"
+      }
+    ],
+    "variable-name": [
+      true,
+      "check-format",
+      "allow-leading-underscore",
+      "allow-pascal-case"
+    ],
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-module",
+      "check-separator",
+      "check-rest-spread",
+      "check-type",
+      "check-typecast",
+      "check-type-operator",
+      "check-preblock"
+    ]
+  }
+}
