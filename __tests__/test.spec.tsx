@@ -2,10 +2,12 @@ import { shallow } from 'enzyme'
 import * as React from 'react'
 import { View } from 'react-native'
 import { App } from '../src/App'
+import { test } from '../src/test'
 
 describe('setup', () => {
     it('test', () => {
-        expect(true).toEqual(true)
+        const calc = test(10, 10)
+        expect(calc).toEqual(20)
     })
 
     it('component', () => {

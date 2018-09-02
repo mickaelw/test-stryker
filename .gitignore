@@ -5,6 +5,7 @@ build/
 .idea
 *.iml
 jest/
+.stryker-tmp/
 
 # Xcode
 #
