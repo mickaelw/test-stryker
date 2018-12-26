@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`setup component 1`] = `
-<Component
+<View
   style={
     Object {
       "alignItems": "center",
@@ -11,7 +11,7 @@ exports[`setup component 1`] = `
     }
   }
 >
-  <Component
+  <Text
     style={
       Object {
         "fontSize": 20,
@@ -21,8 +21,8 @@ exports[`setup component 1`] = `
     }
   >
     Welcome to React Native!
-  </Component>
-  <Component
+  </Text>
+  <Text
     style={
       Object {
         "color": "#333333",
@@ -32,8 +32,8 @@ exports[`setup component 1`] = `
     }
   >
     To get started, edit App.js
-  </Component>
-  <Component
+  </Text>
+  <Text
     style={
       Object {
         "color": "#333333",
@@ -44,6 +44,6 @@ exports[`setup component 1`] = `
   >
     Press Cmd+R to reload,
 Cmd+D or shake for dev menu
-  </Component>
-</Component>
+  </Text>
+</View>
 `;

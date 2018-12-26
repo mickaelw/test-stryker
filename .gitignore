@@ -6,7 +6,8 @@ build/
 *.iml
 jest/
 .stryker-tmp/
-
+ios/
+android/
 # Xcode
 #
 *.pbxuser
